@@ -6,7 +6,7 @@ COL_WIDTH = 40
 RECIPES_PER_LINE = 5
 
 main_menu_text = """Please select one of the following options:
-1) Create a mean plan.
+1) Create a meal plan.
 2) Add new recipe.
 3) Add new ingredient.
 4) Add new Location.
@@ -42,9 +42,9 @@ def meal_plan_menu():
     while True:
         if recipes:
             print_meal_selection(recipes)
-        print("Please select the number of the recipe to add or 'finish' or 'exit': ")
+        print("\nPlease select the number of the recipe to add or 'finish' or 'exit': ")
         print_recipes()
-        user_choice = utils.input_int("Your Selection: ", len(recipe_dict), ("finish", "exit"))
+        user_choice = utils.input_int("\nYour Selection: ", len(recipe_dict), ("finish", "exit"))
         if user_choice == 'finish':
             generate_shopping_list(recipes)
             return
@@ -164,3 +164,4 @@ def generate_shopping_list(recipes):
 
 
 main_menu()
+
