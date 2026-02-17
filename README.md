@@ -17,6 +17,9 @@ Python application using PostgreSQL to manage recipes, ingredients, and generate
 3. Install dependencies: `pip install -r requirements.txt`
 4. Run `python main.py`
 
+## Project Status
+-This project is fully operational and demonstrates core backend and database functionality.  
+-Planned improvements include code refactoring, enhanced input validation, and improved modular structure.
+
 ## Notes
-- The project is operational but may have rough edges in code structure.
 - Contributions or suggestions welcome.
